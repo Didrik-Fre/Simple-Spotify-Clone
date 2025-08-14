@@ -7,6 +7,7 @@ The theme for this project is Billie Eilish's new album **"Hit Me Hard And Soft"
 - **Play / Pause Songs** – Start or stop playback with a button.  
 - **Draggable Timeline** – Drag the progress bar to jump to any part of the song.  
 - **Display Album Artwork** – See the album cover for the currently playing track.  
+- **Volume control**  
 
 ## How to Use
 1. Open the project in your browser.  
@@ -16,7 +17,6 @@ The theme for this project is Billie Eilish's new album **"Hit Me Hard And Soft"
 
 ## Working On
 - Skipping **backwards and forwards** between tracks  
-- **Volume control**  
 
 ## Technologies Used
 - HTML  
