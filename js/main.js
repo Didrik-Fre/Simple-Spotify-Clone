@@ -23,6 +23,9 @@ const songEight = document.querySelector(".song-8");
 const songNine = document.querySelector(".song-9");
 const songTen = document.querySelector(".song-10");
 
+// NEW: volume slider
+const volumeSlider = document.querySelector("#volume-slider");
+
 const songs = [
     "songs/BIRDS OF A FEATHER.mp3",
     "songs/BLUE.mp3",
@@ -35,7 +38,7 @@ const songs = [
     "songs/CHIHIRO.mp3",
     "songs/LAMOUR DE MA VIE.mp3",
     "songs/BITTERSUITE.mp3"
-]
+];
 
 audioElement.src = songs[0];
 
@@ -176,6 +179,11 @@ window.addEventListener("load", () => {
         playSong(audioElement);
     });
 
+    // NEW: Volume control
+    volumeSlider.addEventListener("input", () => {
+        audioElement.volume = volumeSlider.value; // set audio volume based on slider
+    });
+
 });
 
 // Search Box
@@ -193,5 +201,3 @@ searchInput.addEventListener("input", () => {
         }
     });
 });
-
-

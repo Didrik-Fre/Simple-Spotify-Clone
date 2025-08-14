@@ -167,6 +167,44 @@ header > .banner-content > h1 {
     background: #009DEE;
 }
 
+/* Style the volume slider */
+.player-volume {
+    display: flex;              /* use flex to center */
+    justify-content: center;    /* horizontally center */
+    margin-top: 1rem;           /* space below play button */
+}
+
+#volume-slider {
+    width: 200px;               /* make slider wider */
+    height: 10px;               /* make slider thicker */
+    cursor: pointer;            /* pointer on hover */
+    -webkit-appearance: none;   /* remove default style on WebKit browsers */
+    background: #ccc;           /* track color */
+    border-radius: 5px;         /* rounded track */
+}
+
+/* Slider thumb (the handle) */
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #009DEE;        /* follwing the color palette */
+    border-radius: 50%;         /* circular thumb */
+    cursor: pointer;
+    border: none;
+}
+
+#volume-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #009DEE;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+
+
 @media only screen and (max-width: 850px) {
     .container {
         margin-left: 5rem;
@@ -176,6 +214,11 @@ header > .banner-content > h1 {
     /* Always show play icon on small screens */
     #song .play-icon {
         opacity: 1;
+    }
+
+    /* Volume slider adjustments */
+    #volume-slider {
+        width: 100px; /* slightly smaller than desktop */
     }
 }
 
@@ -207,5 +250,15 @@ header > .banner-content > h1 {
     /* Always show play icon on small screens */
     #song .play-icon {
         opacity: 1;
+    }
+
+    /* Volume slider adjustments for mobile */
+    #volume-slider {
+        width: 70px;      /* smaller width for mobile */
+    }
+
+    .player-volume {
+        justify-content: center; /* center the slider */
+        margin-top: 8px;         /* reduce spacing */
     }
 }

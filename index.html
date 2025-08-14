@@ -123,28 +123,35 @@
         </main>
     </div>
     <footer id="player">
-        <div class="player-controls">
-            <button class="player-play-btn" data-playing="false">
-                <div class="player-icon-play">
-                    <img src="images/play-button.png" alt="">
-                </div>
-                <div class="player-icon-pause hidden">
-                    <img src="images/pause-button.png" alt="">
-                </div>
-            </button>
-            <div class="player-timeline">
-                <span class="player-time player-time-current">0:0</span>
-                <div class="player-progress">
-                    <div class="player-progress-filled"></div>
-                </div>
-                <span class="player-time player-time-duration">0:0</span>
+    <div class="player-controls">
+        <button class="player-play-btn" data-playing="false">
+            <div class="player-icon-play">
+                <img src="images/play-button.png" alt="">
             </div>
+            <div class="player-icon-pause hidden">
+                <img src="images/pause-button.png" alt="">
+            </div>
+        </button>
+        <div class="player-timeline">
+            <span class="player-time player-time-current">0:0</span>
+            <div class="player-progress">
+                <div class="player-progress-filled"></div>
+            </div>
+            <span class="player-time player-time-duration">0:0</span>
         </div>
+    </div>
 
-        <audio>
-            Your browser doesnt support the audio element.
-        </audio>
-    </footer>
+    <!-- NEW: Volume control -->
+    <div class="player-volume">
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+        <!-- slider value 0-1, step 0.01 -->
+    </div>
+
+    <audio>
+        Your browser doesnt support the audio element.
+    </audio>
+</footer>
+
     <script src="js/main.js"></script>>
 
 
