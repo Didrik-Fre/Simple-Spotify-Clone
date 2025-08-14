@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/HitMeHardAndSoft.png">
+            <div class="overlay"></div>
+            <div class="banner-content">
+                <h1>Hit Me Hard And Soft</h1>
+                <p>
+                    Billie Eilish newest album.
+                </p>
+            </div>
+        </header>
+        <main>
+            
+            <div class="search-box">
+                <input id="search-input" type="text" placeholder="Search a song ...">
+            </div>
+    
+            <div class="playlist">
+                <div id="song" class="song-1">
+                    <p class="song-order">
+                        1
+                    </p>
+                    <img class="play-icon" src="./images/play-button.png" alt="">
+                    <p class="song-details">
+                        Birds Of A Feather <span class="artist">Billie Eilish</span>
+                    </p>
+                </div>
+                <div id="song" class="song-2">
+                    <p class="song-order">
+                        2
+                    </p>
+                    <img class="play-icon" src="./images/play-button.png" alt="">
+                    <p class="song-details">
+                        Blue <span class="artist">Billie Eilish</span>
+                    </p>
+                </div>
+                <div id="song" class="song-3">
+                    <p class="song-order">
+                        3
+                    </p>
+                    <img class="play-icon" src="./images/play-button.png" alt="">
+                    <p class="song-details">
+                        Lunch <span class="artist">Billie Eilish</span>
+                    </p>
+                </div>
+                <div id="song" class="song-4">
+                    <p class="song-order">
+                        4
+                    </p>
+                    <img class="play-icon" src="./images/play-button.png" alt="">
+                    <p class="song-details">
+                        The Greatest <span class="artist">Billie Eilish</span>
+                    </p>
+                </div>
+                <div id="song" class="song-5">
+                    <p class="song-order">
+                        5
+                    </p>
+                    <img class="play-icon" src="./images/play-button.png" alt="">
+                    <p class="song-details">
+                        Wildflower <span class="artist">Billie Eilish</span>
+                    </p>
+                </div>
+                <!-- Adding more songs static-->
+                <div id="song" class="song-6">
+                    <p class="song-order">
+                        6
+                    </p>
+                    <img class="play-icon" src="./images/play-button.png" alt="">
+                    <p class="song-details">
+                        The Diner <span class="artist">Billie Eilish</span>
+                    </p>
+                </div>
+                <div id="song" class="song-7">
+                    <p class="song-order">
+                        7
+                    </p>
+                    <img class="play-icon" src="./images/play-button.png" alt="">
+                    <p class="song-details">
+                        Skinny <span class="artist">Billie Eilish</span>
+                    </p>
+                </div>
+                <div id="song" class="song-8">
+                    <p class="song-order">
+                        8
+                    </p>
+                    <img class="play-icon" src="./images/play-button.png" alt="">
+                    <p class="song-details">
+                        Chihiro <span class="artist">Billie Eilish</span>
+                    </p>
+                </div>
+                <div id="song" class="song-9">
+                    <p class="song-order">
+                        9
+                    </p>
+                    <img class="play-icon" src="./images/play-button.png" alt="">
+                    <p class="song-details">
+                        L´amour De Ma Vie <span class="artist">Billie Eilish</span>
+                    </p>
+                </div>
+                <div id="song" class="song-10">
+                    <p class="song-order">
+                        10
+                    </p>
+                    <img class="play-icon" src="./images/play-button.png" alt="">
+                    <p class="song-details">
+                        Bittersuite <span class="artist">Billie Eilish</span>
+                    </p>
+                </div>
+                <!--End of songs-->
+            </div>
+        </main>
+    </div>
+    <footer id="player">
+        <div class="player-controls">
+            <button class="player-play-btn" data-playing="false">
+                <div class="player-icon-play">
+                    <img src="images/play-button.png" alt="">
+                </div>
+                <div class="player-icon-pause hidden">
+                    <img src="images/pause-button.png" alt="">
+                </div>
+            </button>
+            <div class="player-timeline">
+                <span class="player-time player-time-current">0:0</span>
+                <div class="player-progress">
+                    <div class="player-progress-filled"></div>
+                </div>
+                <span class="player-time player-time-duration">0:0</span>
+            </div>
+        </div>
+
+        <audio>
+            Your browser doesnt support the audio element.
+        </audio>
+    </footer>
+    <script src="js/main.js"></script>>
+
+
+
+</body>
+</html>
